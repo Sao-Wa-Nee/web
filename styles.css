@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8d3e1; /* Pastel pink background */
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d45d82; /* A slightly darker pink */
+}
+
+nav {
+    background: #ffb2c3; /* Light pink */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s; /* Smooth color change */
+}
+
+nav a:hover {
+    color: #d45d82; /* Change color on hover */
+}
+
+section {
+    padding: 40px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #d45d82; /* Heading color matching the theme */
+}
+
+.profile-pic {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* Make it circular */
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffb2c3; /* Light pink */
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #d45d82; /* Change border color when focused */
+    outline: none; /* Remove default outline */
+}
+
+button[type="submit"] {
+    background-color: #d45d82; /* Dark pink */
+    color: white;
+    padding: 10px 20px; /* Add horizontal padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #c24f72; /* A darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+button:focus {
+    outline: 2px solid #d45d82; /* Highlight the button when focused */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scroll for navigation */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0; /* Adjust padding for smaller screens */
+    }
+    
+    h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+    
+    nav li {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+    
+    section {
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+}
